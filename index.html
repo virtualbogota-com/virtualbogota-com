@@ -75,7 +75,10 @@
                     <a class="item-menu__value--normal" href="#howtogetit" onclick="main.manageMenu(false)">Cómo
                         solicitarlo</a>
                 </div>
-            
+                <div class="item-menu__value" onclick="main.redirectSimulator()">
+                    <a class="item-menu__value--normal" href="#">Calcula tu
+                        cuota</a>
+                </div>
                 <div class="item-menu__value">
                     <a class="item-menu__value--normal" href="#faq" onclick="main.manageMenu(false)">Preguntas
                         frecuentes</a>
@@ -95,22 +98,12 @@
             <h1 class="text__title--normal">Solicita tu crédito sin ir al banco</h1>
             <p class="text__paragraph--normal">Con el <strong>Crédito Libre Inversión</strong> en minutos tendrás el
                 dinero en tu cuenta</p>
-
-             <div class="button">
-                <button class="button__btn" onclick="main.redirectToApp()" id="btn_redirect_main">
+            <div class="button">
+                <button class="button__btn" onclick="window.location.href='https://www.google.com'" id="btn_redirect_main">
                     <div class="button__btn--normal">
                         Iniciar solicitud›
                     </div>
                 </button>
-            </div>
-            
-    <div class="button">
-             <button class="button__btn" onclick="window.location.href='https://www.google.com'" id="btn_redirect_main">
-    <div class="button__btn--normal">
-            Iniciar solicitud›
-        </div>
-    </button>
-</div>
             </div>
             <div class="gif">
                 <a class="gif__mouse-icon" href="#needandoffer"></a>
@@ -125,7 +118,7 @@
         </picture>
 
         <div class="button" id="btn_fixed" style="display: none;">
-            <button class="button__btn" onclick="main.redirectToApp()" id="btn_redirect_float">
+            <button class="button__btn" onclick="window.location.href='https://www.google.com'" id="btn_redirect_float">
                 <div class="button__btn--normal">Iniciar desembolso ›</div>
             </button>
         </div>
@@ -159,15 +152,16 @@
 
             </div>
             <ul class="whatuneed__items">
-               
+                <li class="whatuneed__items--normal">Ingresos mínimos de $1.300.000</li>
                 <li class="whatuneed__items--normal">Tener entre 18 y 69 años.</li>
-                <li class="whatuneed__items--normal">Aceptamos reportado unificacion de deudas.</li>
-                <li class="whatuneed__items--normal">Ser persona natural o juridica</li>
+                <li class="whatuneed__items--normal">No estar reportado en centrales de riesgo.</li>
+                <li class="whatuneed__items--normal">Ser persona natural</li>
                 <li class="whatuneed__items--normal"><span class="whatuneed__items--semibold">Si eres
-                            independiente empleado comerciante pensionados</span>
+                            independiente:</span> Debes realizar los aportes parafiscales acorde al total de tus
+                    ingresos.
                 </li>
                 <li class="whatuneed__items--normal"><span class="whatuneed__items--semibold">Si eres
-                            asalariado:</span> Carta de los bolantes de pago.
+                            asalariado:</span> Debes llevar mínimo 6 meses en tu empresa.
                 </li>
             </ul>
             <div class="oval">
@@ -199,7 +193,7 @@
                             <label class="item__sub-title--normal" for="subtitle">Te prestamos desde </label>
                         </div>
                         <div class="item__value">
-                            <label class="item__value--normal" for="value">400.000 pesos <br> hasta 30 Millones</label>
+                            <label class="item__value--normal" for="value">400.000 pesos <br> hasta 20 Millones</label>
                         </div>
                     </div>
                     <div class="item">
@@ -207,7 +201,7 @@
                             <label class="item__sub-title--normal" for="subtitle">Tasa fija mensual desde</label>
                         </div>
                         <div class="item__value">
-                            <label class="item__value--normal" for="value">1.7% Mes vencido</label>
+                            <label class="item__value--normal" for="value">1.9% Mes vencido</label>
                         </div>
                     </div>
                     <div class="item">
@@ -222,7 +216,16 @@
             </div>
             <div class="whatweoffer__disclaimer">
                 <div class="whatweoffer__disclaimer--normal">
-                  
+                    *Para
+                    <div class="whatweoffer__disclaimer--semibold">créditos superiores a 10 millones de pesos,</div>
+                    puede acercarse a una de
+                    <a target="_blank" class="whatweoffer__disclaimer--link"
+                       href="https://www.bancodebogota.com/cercademi/colombia/results-bogota/Ver%20Todas">nuestras
+                        oficinas,</a>
+                    y tener en cuenta los siguientes
+                    <a target="_blank" class="whatweoffer__disclaimer--link"
+                       href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/productos/para-ti/creditos-y-financiacion/credito-libre-destino">
+                        requisitos.</a>
 
                 </div>
             </div>
@@ -240,7 +243,8 @@
                     cualquier dispositivo.</label>
             </div>
             <div class="wrapper-text__min-title" onclick="main.redirectSimulator()">
-                
+                <a class="wrapper-text__min-title--normal" href="#">Calcula tu
+                    cuota ›</a>
             </div>
         </div>
         <div class="wrapper-d">
@@ -251,7 +255,7 @@
                     </div>
                     <div class="item__text">
                         <label class="item__text--normal" for="text">Ingresa a la solicitud y completa tus datos
-                            bancarios.</label>
+                            personales.</label>
                     </div>
                     <div class="item__border"></div>
                 </div>
@@ -316,7 +320,7 @@
                     </div>
                     <div class="item__text">
                         <label class="item__text--normal" for="text">Ingresa a la solicitud y completa tus datos
-                            bancario.</label>
+                            personales.</label>
                     </div>
                     <div class="item__border"></div>
                 </div>
@@ -325,7 +329,7 @@
                         <label class="item__number--normal" for="number">2.</label>
                     </div>
                     <div class="item__text">
-                        <label class="item__text--normal" for="text">Monto aprobado en minutos.</label>
+                        <label class="item__text--normal" for="text">Conoce el monto aprobado en minutos.</label>
                     </div>
                     <div class="item__border"></div>
                 </div>
@@ -334,7 +338,8 @@
                         <label class="item__number--normal" for="number">3.</label>
                     </div>
                     <div class="item__text">
-                        <label class="item__text--normal" for="text">Codigo o Token de confirmacion</label>
+                        <label class="item__text--normal" for="text">Acepta el pagaré digital, no necesitas
+                            documentos</label>
                     </div>
                     <div class="item__border"></div>
                 </div>
@@ -378,7 +383,10 @@
             <div class="item-faq">
                 <div class="questiontri">
                     <ul class="questiontri__question">
-                       
+                        <li class="questiontri__question--normal"
+                            onclick="main.openFaq('whatiscredit', 'whatiscredittri')">¿Qué es un Crédito de Libre
+                            Inversión?
+                        </li>
                     </ul>
                     <div class="questiontri__tri">
                         <div class="questiontri__tri--normal" id="whatiscredittri"
@@ -481,7 +489,7 @@
                         Ejemplo de cálculo para un monto de 10’000.000 con un plazo de 36 meses.
                         <br><br>Mes 1: Abono a capital 203.677 + Interés: $170.000 + Seguro de Vida $6.730 = Cuota
                         fija mensual $380.645. Saldo a Capital $9.796.323<br>
-                        
+                        <br> <a href="#"><span onclick="main.redirectSimulator()">Calcula tu cuota ›</span></a>
                     </div>
                 </div>
             </div>
@@ -807,3 +815,4 @@
 </script>
 </body>
 </html>
+
